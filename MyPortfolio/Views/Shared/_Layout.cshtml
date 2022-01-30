@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diar Hyseni Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="~/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/favicon/favicon-16x16.png">
+    <link rel="manifest" href="~/favicon/site.webmanifest">
+    <link rel="mask-icon" href="~/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="~/css/site.css">
+
+</head>
+<body>
+    <div class="main-container">
+        <header>
+
+
+            <nav class="navbar">
+                <ul>
+                    <li id="list">
+                        <a href="/#home"><img src="~/Gallery/logo.png" alt="DH logo" width="200" height="150"></a>
+                    </li>
+                    <li><a href="#home"><i class="active fa fa-lg fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="active far fa-lg fa-address-card"></i> About</a></li>
+                    <li><a href="#services"><i class="active fas fa-lg fa-hands-helping"></i>Services</a></li>
+                    <li><a href="#portfolio"><i class="active fa fa-lg fa-briefcase"></i>Portfolio</a></li>
+                    <li><a href="#contact"><i class="active fa fa-lg fa-comments"></i>Contact</a></li>
+                    </i><partial name="_LoginPartial" /> 
+                </ul>
+            </nav>
+        </header>
+        <div id="menu" class="fas fa-bars"></div>
+
+        <div class="main-container">
+            @RenderBody()
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="~/js/site.js"></script>
+        @RenderSection("Scripts", required: false)
+    </div>
+</body>
+</html>

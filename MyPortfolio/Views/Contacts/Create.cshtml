@@ -1,0 +1,85 @@
+﻿@model MyPortfolio.Models.Contact
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="main-content">
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="section-title padd-15">
+                    <h2>Contact Me</h2>
+                </div>
+            </div>
+            <h3 class="contact-title padd-15">Do you have any question?</h3>
+            <h3 class="contact-subtitle padd-15"> SEND ME AN EMAIL</h3>
+            <div class="row">
+                <form method="post" asp-action="Create" asp-controller="Contacts" class="contact-form padd-15">
+                    <div class="row">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-item col-6 padd-15">
+                            <div class="form-group">
+                                <input asp-for="Emri" class="form-control" placeholder="Emri" />
+                                <span asp-validation-for="Emri" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-item col-6 padd-15">
+                            <div class="form-group">
+                                <input asp-for="Email" class="form-control" placeholder="Email" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-item col-12 padd-15">
+                            <div class="form-group">
+                                <input asp-for="Subjekti" class="form-control" placeholder="Subjekti" />
+                                <span asp-validation-for="Subjekti" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-item col-12 padd-15">
+                            <div class="form-group">
+                                <textarea asp-for="Mesazhi" class="form-control" placeholder="Mesazhi"></textarea>
+                                <span asp-validation-for="Mesazhi" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-item col-12 padd-15">
+                            <button type="submit" value="Create" class="btn">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <h3 class="contact-subtitle padd-15"> Connect with me</h3>
+            <div class="row">
+                <div class="contact-info-item ">
+                    <div class="icon"><i class="contacticon fab fa-3x fa-facebook"></i></div>
+                    <h4><a href="https://www.facebook.com/diarhysenii">Facebook</a></h4>
+                </div>
+                <div class="contact-info-item ">
+                    <div class="icon">
+                        <i class="contacticon fab fa-3x fa-instagram"></i>
+                    </div>
+                    <h4><a href="https://www.instagram.com/diarhyseni">Instagram</a></h4>
+                </div>
+                <div class="contact-info-item padd-15">
+                    <div class="icon">
+                        <i class="contacticon fab fa-3x fa-linkedin-in"></i>
+                    </div>
+                    <h4><a href="https://www.linkedin.com/in/diar-hyseni-a08292221/">Linkedln</a></h4>
+                </div>
+                <div class="contact-info-item padd-15">
+                    <div class="icon"><i class="contacticon fab fa-3x fa-github-square"></i></div>
+                    <h4><a href="https://github.com/diarhyseni">GitHub</a></h4>
+
+                </div>
+
+                <h5> ©Copyright - DiarHyseni2022 </h5>
+            </div>
+        </div>
+    </section>
+</div>
